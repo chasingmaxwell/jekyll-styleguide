@@ -7,6 +7,8 @@ title:  "Colors"
 {% assign names = "Violet,Crimson,Mandarin,Freshwater,Warm Slate" | split:"," %}
 {% assign values = "dark,main,light,highlight" | split:"," %}
 
+This palette is an example. Replace with a palette appropriate to your project.
+
 <div class="styleguide-swatches">
   {% for color in colors %}
   <ol class="{{ color }}">
@@ -32,7 +34,3 @@ this style guide).
 
 _Warm Slate_ should be used as a structural color for text, subtle backgrounds,
 or borders, but not as an accent; it is not a branding color.
-
-A <em class="status-green">status green</em> is available in all four values,
-however it should only be used in system status messages because of the
-cultural associations green has with other colors in this palette.

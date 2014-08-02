@@ -7,9 +7,9 @@ body {
   font-weight: $font-body-weight;
   font-size: $base-font-size;
   line-height: $base-line-height;
-  color: wp-color($grey);
+  color: guide-color($grey);
   background: {
-    color: wp-color($grey, dark, -5%);
+    color: guide-color($grey, dark, -5%);
     image: image-url('textures/noise.png');
     position: 50% 50%;
     repeat: repeat repeat;
@@ -36,19 +36,19 @@ body {
 #{headings(4,6)} {
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: wp-color($red);
+  color: guide-color($red);
 }
 
 h1 {
-  color: wp-color($purple, main, -2.5%);
+  color: guide-color($purple, main, -2.5%);
 }
 
 h2 {
-  color: wp-color($purple);
+  color: guide-color($purple);
 }
 
 h3 {
-  color: wp-color($purple);
+  color: guide-color($purple);
 }
 
 h4 {
@@ -77,16 +77,16 @@ a {
   &:visited {
     color: $visited;
     &:hover, &:focus {
-      color: wp-color($purple);
+      color: guide-color($purple);
     }
   }
 
   &:hover, &:focus {
-    color: wp-color($blue, dark);
+    color: guide-color($blue, dark);
   }
 
   &:active {
-    color: wp-color($red, dark);
+    color: guide-color($red, dark);
   }
 }
 
@@ -135,7 +135,7 @@ ol.unstyled {
 
 hr {
   height: 0;
-  border: 1px solid wp-color($grey, highlight, 5%);
+  border: 1px solid guide-color($grey, highlight, 5%);
   margin: 1em 0;
 }
 
@@ -161,7 +161,7 @@ blockquote {
   position: relative;
 
   font-family: $archer;
-  color: wp-color($orange, 'dark', -5%);
+  color: guide-color($orange, 'dark', -5%);
   margin: 1em 1.5em;
 
   @include respond-to('blockquote frame') {
@@ -179,7 +179,7 @@ blockquote {
       font-family: $archer;
       font-style: italic;
       font-weight: 400;
-      color: wp-color($orange, 'dark');
+      color: guide-color($orange, 'dark');
     }
 
     &:before, &:after {

@@ -35,22 +35,22 @@
   a {
     display: block;
     text-decoration: none;
-    color: wp-color($blue, dark, 5%);
+    color: guide-color($blue, dark, 5%);
 
     @include transition(border 0.2s ease-out);
 
     &:hover {
-      color: wp-color($blue, dark, -5%);
-      background: wp-color($grey, bright, 10%);
-      border-bottom: 2px solid wp-color($purple, bright);
-      &:after { border-left-color: wp-color($grey, bright, 10%); }
+      color: guide-color($blue, dark, -5%);
+      background: guide-color($grey, bright, 10%);
+      border-bottom: 2px solid guide-color($purple, bright);
+      &:after { border-left-color: guide-color($grey, bright, 10%); }
     }
 
   }
 
   .no-link {
-    color: wp-color($grey, main, 7.5%);
-    &.last { color: wp-color($grey, main); }
+    color: guide-color($grey, main, 7.5%);
+    &.last { color: guide-color($grey, main); }
   }
 
   .first a {
@@ -65,9 +65,8 @@
     }
 
     #header .row-3 & {
-      background-color: wp-color($grey, bright, 10%);
-      &:after { border-left-color: wp-color($grey, bright, 10%); }
-      // &:before { border-left-color: wp-color($grey, bright, 10%); }
+      background-color: guide-color($grey, bright, 10%);
+      &:after { border-left-color: guide-color($grey, bright, 10%); }
     }
 
     @include respond-to('breadcrumb styles expanded') {
@@ -83,16 +82,16 @@
   li.last {
     border-right: none;
     font-style: italic;
-    background: wp-color($grey, bright, 10%);
+    background: guide-color($grey, bright, 10%);
     @include border-radius(0 2px 2px 0);
     @include respond-to('breadcrumb styles expanded') { padding-right: 1em; }
   }
 
   a, .no-link {
     padding: 2px 5px 0 5px;
-    background: wp-color($grey, bright, 7.5%);
-    border-bottom: 2px solid wp-color($grey, bright, 5%);
-    border-right: 1px solid wp-color($grey, highlight, 7.5%);
+    background: guide-color($grey, bright, 7.5%);
+    border-bottom: 2px solid guide-color($grey, bright, 5%);
+    border-right: 1px solid guide-color($grey, highlight, 7.5%);
 
     white-space: nowrap;
 
@@ -115,7 +114,7 @@
         border: {
           top: 25px solid transparent;
           bottom: 25px solid transparent;
-          left: 10px solid wp-color($grey, bright, 7.5%);
+          left: 10px solid guide-color($grey, bright, 7.5%);
         }
       }
 
@@ -132,7 +131,7 @@
       &:before {
         z-index: 1;
         margin-left: 1px;
-        border-left-color: wp-color($grey, highlight, 7.5%);
+        border-left-color: guide-color($grey, highlight, 7.5%);
       }
     }
   }

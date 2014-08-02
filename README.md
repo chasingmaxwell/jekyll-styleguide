@@ -1,6 +1,6 @@
-# World Pulse style guide
+# Style guide template
 
-Style guide for the new worldpulse.com
+Style guide template using:
 
 * Jekyll
 * Grunt

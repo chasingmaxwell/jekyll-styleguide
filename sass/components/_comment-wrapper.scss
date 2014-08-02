@@ -13,8 +13,8 @@
   margin-top: 1em;
   width: 100%;
   padding: 1em;
-  background-color: wp-color($grey, highlight, 2.5%);
-  border-top: 1px solid wp-color($grey, highlight);
+  background-color: guide-color($grey, highlight, 2.5%);
+  border-top: 1px solid guide-color($grey, highlight);
   @include border-radius(0 0 3px 3px);
 
   a.button {
@@ -53,7 +53,7 @@
 
   .ajax-comment-wrapper {
     form {
-      border: 1px solid wp-color($grey, highlight, -5%);
+      border: 1px solid guide-color($grey, highlight, -5%);
       background-color: $white;
       padding: 1em;
       margin: 1em 0 1em 4em;

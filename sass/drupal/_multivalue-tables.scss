@@ -7,7 +7,7 @@
   // Icon business:
   a.tabledrag-handle {
     .handle {
-      @extend %worldpulse-icon;
+      @extend %guide-icon;
       margin-left: 0em !important;
 
       .backgroundsize & {
@@ -31,6 +31,6 @@
 
 .tabledrag-processed {
   // Active drag-row:
-  tr.drag { background-color: wp-color($blue, 'highlight', 5%); }
-  tr.drag-previous { background-color: wp-color($blue, 'highlight', 10%); }
+  tr.drag { background-color: guide-color($blue, 'highlight', 5%); }
+  tr.drag-previous { background-color: guide-color($blue, 'highlight', 10%); }
 }

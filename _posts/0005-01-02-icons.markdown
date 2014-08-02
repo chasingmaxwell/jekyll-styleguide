@@ -43,9 +43,9 @@ config for Grunticons in `customselectors`:
 
           // "Abuse" has a hover state, a reported state, and needs support for
           // Flag module classes:
-          "abuse": [".flag-wp-flag-comments-abuse .flag-action"],
-          "abuse-hover": [".icon-abuse:hover, .flag-wp-flag-comments-abuse a:hover"],
-          "abuse-reported": [".flag-wp-flag-comments-abuse .unflag-action"]
+          "abuse": [".flag-guide-flag-comments-abuse .flag-action"],
+          "abuse-hover": [".icon-abuse:hover, .flag-guide-flag-comments-abuse a:hover"],
+          "abuse-reported": [".flag-guide-flag-comments-abuse .unflag-action"]
         }
       }
     }
@@ -68,7 +68,7 @@ to be read inline by screen readers, search engines, text browsers, etc.
 
 <h3 class="icons-inventory">Full Inventory:</h3>
 
-| CSS Class       | Example                                                | Meaning on _Brand Name Here_ | Original Iconmonstr Entry                                |
+| CSS Class       | Example                                                | Meaning on _Project Name Here_ | Original Iconmonstr Entry                                |
 | --------------- |:------------------------------------------------------:| ------------------------ | -------------------------------------------------------- |
 | `.icon-abuse`   | <a class="icon-abuse">This is Abuse or Spam</a>        | _Spam / Abuse_           | [Stop 3](http://iconmonstr.com/stop-3-icon/)             |
 | `.icon-cc`      | <a class="icon-cc">Creative Commons</a>                | _Creative Commons_       | [Copyright 4](http://iconmonstr.com/copyright-4-icon/)   |

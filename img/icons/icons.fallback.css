@@ -1,11 +1,11 @@
 .icon-abuse:hover,
-.flag-wp-flag-comments-abuse a:hover,
+.flag-guide-flag-comments-abuse a:hover,
 .icon-abuse-red { background-image: url('png/abuse-red.png'); background-repeat: no-repeat; }
 
 .icon-abuse.unflag-action,
 .icon-abuse-red_dark { background-image: url('png/abuse-red_dark.png'); background-repeat: no-repeat; }
 
-.flag-wp-flag-comments-abuse .flag-action,
+.flag-guide-flag-comments-abuse .flag-action,
 .icon-abuse { background-image: url('png/abuse.png'); background-repeat: no-repeat; }
 
 .icon-cc:hover,

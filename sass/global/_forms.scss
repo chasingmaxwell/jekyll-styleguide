@@ -6,7 +6,7 @@ form {
 }
 
 fieldset {
-  border: 1px solid wp-color($grey, highlight, -2.5%);
+  border: 1px solid guide-color($grey, highlight, -2.5%);
   border-bottom-width: 2px;
   @include border-radius(3px);
   margin: 0 0 1em 0;
@@ -16,7 +16,7 @@ fieldset {
     padding: 0 1em;
     font-family: $gotham;
     font-weight: 600;
-    color: wp-color($grey, bright, -15%);
+    color: guide-color($grey, bright, -15%);
   }
 
   html.js &.collapsed {
@@ -44,13 +44,13 @@ textarea {
   font-family: $form-font-family; // And only set font-family here for those that need it (note the missing label element)
   padding: 0.375em;
   outline: 0;
-  background-color: wp-color($grey, 'highlight', 5%);
+  background-color: guide-color($grey, 'highlight', 5%);
 
   @include transition(box-shadow 0.3s ease-out, border 0.3s ease-out);
   &:focus {
-    border-color: wp-color($orange, 'dark');
+    border-color: guide-color($orange, 'dark');
     background-color: #ffffff; // Yes, this is the *one time* we're calling out pure white.
-    @include box-shadow(0 0 4px rgba(wp-color($orange, 'dark'), 0.5));
+    @include box-shadow(0 0 4px rgba(guide-color($orange, 'dark'), 0.5));
   }
 }
 
@@ -65,7 +65,7 @@ label {
   font-size: 0.875em;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: wp-color($grey, 'main', 5%);
+  color: guide-color($grey, 'main', 5%);
 
   input[type="radio"] + &,
   input[type="checkbox"] + & {
@@ -82,21 +82,21 @@ input[type="password"],
 input[type="email"],
 textarea,
 select {
-  border: 1px solid wp-color($grey, 'bright');
+  border: 1px solid guide-color($grey, 'bright');
   @include border-radius(2px);
 
   &:focus {
-    border-color: wp-color($grey, 'bright', -5%);
+    border-color: guide-color($grey, 'bright', -5%);
 
     &:invalid {
-      border-color: wp-color($red, bright);
-      @include box-shadow(0 0 4px rgba(wp-color($red, 'dark'), 0.5));
+      border-color: guide-color($red, bright);
+      @include box-shadow(0 0 4px rgba(guide-color($red, 'dark'), 0.5));
     }
   }
 
 
   &:invalid {
-    border-color: wp-color($red, main, 10%);
+    border-color: guide-color($red, main, 10%);
   }
 }
 
@@ -107,8 +107,8 @@ input[type="text"].required {
   // We'll put "valid" in here so that we don't have green outlines on all
   // text fields.
   &:focus:valid {
-    border-color: wp-color($green, main);
-    @include box-shadow(0 0 4px rgba(wp-color($green, 'dark'), 0.5));
+    border-color: guide-color($green, main);
+    @include box-shadow(0 0 4px rgba(guide-color($green, 'dark'), 0.5));
   }
 }
 
@@ -122,7 +122,7 @@ input[type="checkbox"] {
 }
 
 .form-required {
-  color: wp-color($red);
+  color: guide-color($red);
 
   + .form-required {
     // With conditional fields / states API changes, sometimes two of these
@@ -152,7 +152,7 @@ input[type="checkbox"] {
   }
 
   .description {
-    color: wp-color($grey, main, 20%);
+    color: guide-color($grey, main, 20%);
   }
 
   @include respond-to('wide form labels') {
@@ -181,7 +181,7 @@ input[type="checkbox"] {
   }
 
   .description {
-    color: wp-color($grey, main, 20%);
+    color: guide-color($grey, main, 20%);
   }
 
   .form-item {
@@ -193,7 +193,7 @@ input[type="checkbox"] {
   }
 
   input:checked + label {
-    color: wp-color($blue);
+    color: guide-color($blue);
   }
 
 
@@ -223,7 +223,7 @@ input[type="checkbox"] {
   }
 
   .description {
-    color: wp-color($grey, main, 20%);
+    color: guide-color($grey, main, 20%);
   }
 
   @include respond-to('wide form labels') {

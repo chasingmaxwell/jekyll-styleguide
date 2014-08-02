@@ -9,7 +9,7 @@
     font-weight: 600;
     line-height: 1.125;
     letter-spacing: -1px;
-    color: wp-color($purple, main, -2.5%);
+    color: guide-color($purple, main, -2.5%);
     font-size: 1.25em;
   }
 
@@ -45,18 +45,18 @@
 
     .form-radios label {
       display: block;
-      color: wp-color($grey, main);
-      background-color: wp-color($grey, bright, 10%);
+      color: guide-color($grey, main);
+      background-color: guide-color($grey, bright, 10%);
       padding: 0.5em 1.25em 0.5em 0.75em;
 
-      border: 1px solid wp-color($grey, bright, 5%);
+      border: 1px solid guide-color($grey, bright, 5%);
       border-bottom-width: 2px;
 
       @include transition(all .2s ease-out);
 
       &:hover {
-        color: wp-color($grey, main, -5%);
-        background-color: wp-color($grey, bright, 15%);
+        color: guide-color($grey, main, -5%);
+        background-color: guide-color($grey, bright, 15%);
       }
 
       .form-required {
@@ -73,33 +73,33 @@
 
     .form-type-radio:first-child label {
       @include border-radius(3px 0 0 3px);
-      border-left: 1px solid wp-color($grey, bright, 5%);
+      border-left: 1px solid guide-color($grey, bright, 5%);
     }
 
     // This will not work for IE 8, we need to find another way.
     .form-type-radio:last-child label {
       @include border-radius(0 3px 3px 0);
-      border-right: 1px solid wp-color($grey, bright, 5%);
+      border-right: 1px solid guide-color($grey, bright, 5%);
     }
 
     .form-radios input:checked + label {
       color: $white;
       font-weight: bold;
-      background-color: wp-color($purple);
+      background-color: guide-color($purple);
 
-      border-color: wp-color($purple, main, -5%) !important; // Use important to override the :first/last-child label outer borders
+      border-color: guide-color($purple, main, -5%) !important; // Use important to override the :first/last-child label outer borders
 
       &:hover {
-        background-color: wp-color($purple, main, 5%);
+        background-color: guide-color($purple, main, 5%);
       }
     }
   }
 
   .form-disabled label {
-    background-color: wp-color($grey, bright);
+    background-color: guide-color($grey, bright);
 
     &:hover {
-      background-color: wp-color($grey, bright);
+      background-color: guide-color($grey, bright);
     }
   }
 
@@ -130,7 +130,7 @@
     font-family: $gotham;
     font-weight: 400;
     line-height: 1.125;
-    color: wp-color($grey, main);
+    color: guide-color($grey, main);
     font-size: 1.125em;
   }
 
@@ -156,7 +156,7 @@
     }
 
     .description {
-      color: wp-color($grey, main, 15%);
+      color: guide-color($grey, main, 15%);
       font-size: 0.875em;
       margin-left: 6px; // To mostly match the UA stylesheet, since we can't really style file inputs.
     }

@@ -5,7 +5,7 @@ require 'breakpoint'
 require 'toolkit'
 
 # Set this to the root of your project when deployed:
-http_path = "/sites/all/themes/wp_aurora"
+http_path = "/sites/all/themes/guide_aurora"
 css_dir = "css"
 sass_dir = "sass"
 images_dir = "images"

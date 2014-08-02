@@ -1,16 +1,16 @@
 (function ($, Drupal, window, document, undefined) {
 
-  var wp_icon_tooltip = function () {
+  var guide_icon_tooltip = function () {
     // We use .attr() instead of .data() because we need an actual DOM change.
     if ($(this).text().length) {
       $(this).attr('data-desc', $(this).text()).addClass('show-tooltip');
     }
   };
 
-  Drupal.behaviors.wp_icon_tooltip = {
+  Drupal.behaviors.guide_icon_tooltip = {
     attach: function () {
-      $('[class*="icon-"]').each(wp_icon_tooltip);
-      $('.flag').each(wp_icon_tooltip);
+      $('[class*="icon-"]').each(guide_icon_tooltip);
+      $('.flag').each(guide_icon_tooltip);
     }
   };
 

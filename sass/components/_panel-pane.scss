@@ -8,7 +8,7 @@
 %panel-pane-content {
   padding: 1em;
   margin-bottom: 1em;
-  border: 1px solid wp-color($grey, highlight, -5%);
+  border: 1px solid guide-color($grey, highlight, -5%);
 }
 
 // "Primary content" stuff (main node content, etc). Generally, we'll extend
@@ -16,10 +16,10 @@
 // See below.
 %panel-pane-primary {
   @extend %panel-pane-content;
-  border: 1px solid wp-color($grey, highlight, -5%);
+  border: 1px solid guide-color($grey, highlight, -5%);
   border-bottom-width: 2px;
   @include border-radius(3px);
-  background-color: wp-color($grey, highlight, 5%);
+  background-color: guide-color($grey, highlight, 5%);
 }
 
 // "Secondary content" stuff (sidebars, etc.). Generally, we'll extend this
@@ -27,9 +27,9 @@
 // individually. See below.
 %panel-pane-secondary {
   @extend %panel-pane-content;
-  border: 1px solid wp-color($grey, highlight, -3.5%);
+  border: 1px solid guide-color($grey, highlight, -3.5%);
   border-bottom-width: 2px;
-  background-color: wp-color($grey, highlight, 2.5%);
+  background-color: guide-color($grey, highlight, 2.5%);
 }
 
 // When a pane is inside a region wherein it has inherited one of the

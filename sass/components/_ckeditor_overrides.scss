@@ -7,41 +7,41 @@ html body .cke_chrome {
   // Increase specificity to override ckeditor's own stylesheet, which is taking
   // precedence despite being called earlier than this file...
   @include box-shadow(none);
-  border-color: wp-color($grey, highlight, -10%);
+  border-color: guide-color($grey, highlight, -10%);
 
   .cke_top, .cke_bottom {
-    background: wp-color($grey, highlight);
+    background: guide-color($grey, highlight);
   }
 
   .cke_top {
-    border-bottom-color: wp-color($grey, highlight, -5%);
+    border-bottom-color: guide-color($grey, highlight, -5%);
   }
 
   .cke_bottom {
-    border-top-color: wp-color($grey, highlight, -5%);
+    border-top-color: guide-color($grey, highlight, -5%);
   }
 
   .cke_path {
     .cke_path_item:hover {
       @include box-shadow(none);
-      background: wp-color($grey, highlight, -10%);
+      background: guide-color($grey, highlight, -10%);
     }
   }
 
   .cke_toolgroup {
-    border-color: wp-color($grey, highlight, -2.5%);
-    background: wp-color($grey, highlight, 5%);
+    border-color: guide-color($grey, highlight, -2.5%);
+    background: guide-color($grey, highlight, 5%);
 
     a:hover {
-      background: wp-color($grey, highlight, -2.5%);
+      background: guide-color($grey, highlight, -2.5%);
     }
 
     .cke_button_on {
       @include box-shadow(none);
-      background: wp-color($grey, highlight, -10%);
+      background: guide-color($grey, highlight, -10%);
 
       &:hover {
-        background: wp-color($grey, highlight, -5%);
+        background: guide-color($grey, highlight, -5%);
       }
     }
   }

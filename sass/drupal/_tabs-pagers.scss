@@ -37,7 +37,7 @@ ul.primary, ul.pager {
 
     &:first-child, &.first {
       a {
-        border-left-color: wp-color($grey, 'highlight', -5%);
+        border-left-color: guide-color($grey, 'highlight', -5%);
         @include border-radius(2px 0 0 2px);
       }
     }
@@ -52,11 +52,11 @@ ul.primary, ul.pager {
       display: block;
       @include transition(border 0.2s ease-out, background 0.2s ease-out);
 
-      color: wp-color($grey);
-      background-color: wp-color($grey, 'highlight', 2.5%);
-      border: 1px solid wp-color($grey, 'highlight', -5%);
+      color: guide-color($grey);
+      background-color: guide-color($grey, 'highlight', 2.5%);
+      border: 1px solid guide-color($grey, 'highlight', -5%);
       border-bottom-width: 2px;
-      border-left-color: wp-color($grey, 'highlight', 5%);
+      border-left-color: guide-color($grey, 'highlight', 5%);
 
 
       padding: 0.5em 1em;
@@ -67,7 +67,7 @@ ul.primary, ul.pager {
       // At the smallest breakpoint, pager-previous is the "first" visible
       // link, so we need to copy in styles from li:first-child a defined above
       @include respond-to('pager tiny') {
-        border-left-color: wp-color($grey, 'highlight', -5%);
+        border-left-color: guide-color($grey, 'highlight', -5%);
         @include border-radius(2px 0 0 2px);
       }
     }
@@ -95,16 +95,16 @@ ul.primary, ul.pager {
     }
 
     a:hover {
-      background-color: wp-color($grey, 'highlight', 5%);
-      border-bottom-color: wp-color($purple, 'highlight');
+      background-color: guide-color($grey, 'highlight', 5%);
+      border-bottom-color: guide-color($purple, 'highlight');
     }
 
     &.active a, &.pager-current {
       font-weight: 600;
-      color: wp-color($purple);
-      background-color: wp-color($grey, 'highlight', 5%);
-      border-color: wp-color($grey, 'bright', 5%);
-      border-bottom-color: wp-color($purple, 'bright');
+      color: guide-color($purple);
+      background-color: guide-color($grey, 'highlight', 5%);
+      border-color: guide-color($grey, 'bright', 5%);
+      border-bottom-color: guide-color($purple, 'bright');
     }
   }
 }

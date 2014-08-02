@@ -60,7 +60,7 @@
   // For list views of rendered entities (generally teasers):
   .views-row article {
     padding-bottom: 1em;
-    border-bottom: 1px solid wp-color($grey, highlight, -5%);
+    border-bottom: 1px solid guide-color($grey, highlight, -5%);
     margin-bottom: 1em;
 
     h3, :first-child {

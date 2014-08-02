@@ -34,7 +34,7 @@
 #cboxContent {
   position:relative;
   // WP:
-  border: 2px solid wp-color($grey, 'highlight', 5%);
+  border: 2px solid guide-color($grey, 'highlight', 5%);
   border-bottom-width: 3px;
   @include border-radius(3px);
   @include box-shadow(0 0 5px rgba(0,0,0,0.5));
@@ -51,7 +51,7 @@
   &[style] { float: none !important; }
   &[style]:empty, &:empty { display: none !important; }
   text-align: center;
-  color: wp-color($grey, 'highlight', 5%);
+  color: guide-color($grey, 'highlight', 5%);
   font-size: 0.875em;
 
   position: absolute;
@@ -59,7 +59,7 @@
   left: 0;
   right: 0;
 
-  background-color: wp-color($grey, dark, -5%);
+  background-color: guide-color($grey, dark, -5%);
   background-color: rgba(0,0,0, 0.8);
   padding: 0.25em;
 }
@@ -121,7 +121,7 @@
 
 #cboxCurrent {
   position: absolute;
-  color: wp-color($grey, 'bright');
+  color: guide-color($grey, 'bright');
 
   font-family: $gotham;
   font-size: 0.75em;
@@ -130,7 +130,7 @@
 }
 
 #cboxPrevious, #cboxNext, #cboxClose {
-  @extend %worldpulse-icon;
+  @extend %guide-icon;
   // So these are <button> elements, so we need to clear out some <button> styles
   // which aren't taken care of by the icon classes. Icon stuff is declared with
   // an ID selector (b/c of the extension) so those already take precedence.

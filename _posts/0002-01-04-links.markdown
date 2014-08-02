@@ -4,8 +4,8 @@ title:  "Links"
 ---
 
 {% capture a %}
-  Links may appear as visited, like <a href="#">Brand Name Here</a>,
-  or unvisited, like <a href="http://www.example.com">this site you've never been to</a>.
+  Links may appear as visited, like <a href="http://www.example-visited">this site you've been to</a>,
+  or unvisited, like <a href="http://www.example-unvisited.com">this site you've never been to</a>.
 {% endcapture %}
 
 {% include sample.html sample=a %}

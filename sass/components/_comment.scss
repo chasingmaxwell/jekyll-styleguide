@@ -4,7 +4,7 @@
  */
 
 .comment {
-  border-bottom: 1px solid wp-color($grey, highlight);
+  border-bottom: 1px solid guide-color($grey, highlight);
   margin-bottom: 1em;
 
   .title {
@@ -20,7 +20,7 @@
 
     .comment-meta {
       font-style: italic;
-      color: wp-color($purple, main);
+      color: guide-color($purple, main);
     }
   }
 
@@ -38,15 +38,15 @@
 
   .comment-redacted {
     font-style: italic;
-    color: wp-color($orange, main, -10%);
+    color: guide-color($orange, main, -10%);
   }
 
   &.comment-unpublished {
-    background-color: wp-color($red, highlight, 17.5%);
+    background-color: guide-color($red, highlight, 17.5%);
   }
 
   .comment-body-unpublished {
-    color: wp-color($red, bright, -5%);
+    color: guide-color($red, bright, -5%);
     font-style: italic;
   }
 
@@ -60,18 +60,18 @@
     }
 
     .comment-new {
-      color: wp-color($orange, highlight, 10%);
-      background-color: wp-color($orange, main);
+      color: guide-color($orange, highlight, 10%);
+      background-color: guide-color($orange, main);
     }
 
     .comment-edited {
-      color: wp-color($grey, highlight, 5%);
-      background-color: wp-color($grey, bright, -5%);
+      color: guide-color($grey, highlight, 5%);
+      background-color: guide-color($grey, bright, -5%);
     }
 
     .comment-abuse-notice {
-      color: wp-color($red, highlight, 5%);
-      background-color: wp-color($red, bright, -5%);
+      color: guide-color($red, highlight, 5%);
+      background-color: guide-color($red, bright, -5%);
     }
 
     ul.links {

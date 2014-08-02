@@ -19,49 +19,49 @@ input[type="button"],
   margin-bottom: 0.5em;
   margin-right: 0.5em;
 
-  color: wp-color($grey);
-  @include text-shadow(1px 1px 0 rgba(wp-color($grey, 'highlight'), 0.5));
+  color: guide-color($grey);
+  @include text-shadow(1px 1px 0 rgba(guide-color($grey, 'highlight'), 0.5));
 
   &[disabled] {
     font-weight: 400;
-    color: wp-color($grey, 'main', 5%);
+    color: guide-color($grey, 'main', 5%);
     @include text-shadow(none);
   }
 
-  background-color: wp-color($grey, 'bright');
+  background-color: guide-color($grey, 'bright');
   @include background-image(linear-gradient(
-    wp-color($grey, 'bright', 5%),
-    wp-color($grey, 'bright') 30%,
-    wp-color($grey, 'bright') 70%,
-    wp-color($grey, 'bright', -2.5%)
+    guide-color($grey, 'bright', 5%),
+    guide-color($grey, 'bright') 30%,
+    guide-color($grey, 'bright') 70%,
+    guide-color($grey, 'bright', -2.5%)
   ));
 
   @include border-radius(4px);
   border: {
     width: 1px 1px 3px 1px;
     style: solid;
-    color: wp-color($grey, 'bright', -5%);
+    color: guide-color($grey, 'bright', -5%);
   }
 
   &:hover, &:focus {
-    background-color: wp-color($grey, 'bright', 5%);
+    background-color: guide-color($grey, 'bright', 5%);
     @include background-image(linear-gradient(
-      wp-color($grey, 'bright', 10%),
-      wp-color($grey, 'bright', 5%) 30%,
-      wp-color($grey, 'bright', 5%) 70%,
-      wp-color($grey, 'bright')
+      guide-color($grey, 'bright', 10%),
+      guide-color($grey, 'bright', 5%) 30%,
+      guide-color($grey, 'bright', 5%) 70%,
+      guide-color($grey, 'bright')
     ));
-    border-color: wp-color($grey, 'bright', -10%);
+    border-color: guide-color($grey, 'bright', -10%);
   }
 
   &[disabled], &[disabled]:hover {
-    background-color: wp-color($grey, 'highlight', -10%);
+    background-color: guide-color($grey, 'highlight', -10%);
     @include background-image(none);
-    border-color: wp-color($grey, 'highlight', -12.5%);
+    border-color: guide-color($grey, 'highlight', -12.5%);
   }
 
   &:focus {
-    @include box-shadow(0 0 4px rgba(wp-color($grey), 0.5));
+    @include box-shadow(0 0 4px rgba(guide-color($grey), 0.5));
   }
 }
 
@@ -73,37 +73,37 @@ a.button {
 %btn-primary,
 .btn-primary,
 input.action-submit { // The input. is necissary here to override the above rules.
-  background-color: wp-color($blue);
+  background-color: guide-color($blue);
   @include background-image(linear-gradient(
-    wp-color($blue, 'main', 5%),
-    wp-color($blue) 30%,
-    wp-color($blue) 70%,
-    wp-color($blue, 'main', -2.5%)
+    guide-color($blue, 'main', 5%),
+    guide-color($blue) 30%,
+    guide-color($blue) 70%,
+    guide-color($blue, 'main', -2.5%)
   ));
-  border-color: wp-color($blue, 'main', -5%);
+  border-color: guide-color($blue, 'main', -5%);
   color: $white;
-  @include text-shadow(1px 1px 0 wp-color($blue, 'dark'));
+  @include text-shadow(1px 1px 0 guide-color($blue, 'dark'));
 
   &:hover, &:focus {
-    border-color: wp-color($blue, 'main', -5%);
-    background-color: wp-color($blue, 'main', 5%);
+    border-color: guide-color($blue, 'main', -5%);
+    background-color: guide-color($blue, 'main', 5%);
     @include background-image(linear-gradient(
-      wp-color($blue, 'main', 10%),
-      wp-color($blue, 'main', 5%) 30%,
-      wp-color($blue, 'main', 5%) 70%,
-      wp-color($blue)
+      guide-color($blue, 'main', 10%),
+      guide-color($blue, 'main', 5%) 30%,
+      guide-color($blue, 'main', 5%) 70%,
+      guide-color($blue)
     ));
   }
 
   &[disabled], &[disabled]:hover {
-    background-color: mix(wp-color($blue), wp-color($grey, 'bright'));
+    background-color: mix(guide-color($blue), guide-color($grey, 'bright'));
     @include background-image(none);
-    border-color: darken(mix(wp-color($blue), wp-color($grey, 'bright')), 5%);
+    border-color: darken(mix(guide-color($blue), guide-color($grey, 'bright')), 5%);
     color: $white;
   }
 
   &:focus {
-    @include box-shadow(0 0 4px rgba(wp-color($blue), 0.5));
+    @include box-shadow(0 0 4px rgba(guide-color($blue), 0.5));
   }
 }
 
@@ -112,109 +112,109 @@ input.action-submit { // The input. is necissary here to override the above rule
 form[id*="delete"] input.action-submit,
 form[id*="redact"] input.action-submit,
 input.action-delete {
-  background-color: wp-color($red);
+  background-color: guide-color($red);
   @include background-image(linear-gradient(
-    wp-color($red, 'main', 5%),
-    wp-color($red) 30%,
-    wp-color($red) 70%,
-    wp-color($red, 'main', -2.5%)
+    guide-color($red, 'main', 5%),
+    guide-color($red) 30%,
+    guide-color($red) 70%,
+    guide-color($red, 'main', -2.5%)
   ));
-  border-color: wp-color($red, 'main', -5%);
+  border-color: guide-color($red, 'main', -5%);
   color: $white;
-  @include text-shadow(1px 1px 0 wp-color($red, 'dark'));
+  @include text-shadow(1px 1px 0 guide-color($red, 'dark'));
 
   &:hover, &:focus {
-    border-color: wp-color($red, 'main', -5%);
-    background-color: wp-color($red, 'main', 5%);
+    border-color: guide-color($red, 'main', -5%);
+    background-color: guide-color($red, 'main', 5%);
     @include background-image(linear-gradient(
-      wp-color($red, 'main', 10%),
-      wp-color($red, 'main', 5%) 30%,
-      wp-color($red, 'main', 5%) 70%,
-      wp-color($red)
+      guide-color($red, 'main', 10%),
+      guide-color($red, 'main', 5%) 30%,
+      guide-color($red, 'main', 5%) 70%,
+      guide-color($red)
     ));
   }
 
   &[disabled], &[disabled]:hover {
-    background-color: mix( wp-color($red), wp-color($grey, 'bright'));
+    background-color: mix( guide-color($red), guide-color($grey, 'bright'));
     @include background-image(none);
-    border-color: darken(mix(wp-color($red), wp-color($grey, 'bright')), 5%);
+    border-color: darken(mix(guide-color($red), guide-color($grey, 'bright')), 5%);
     color: $white;
   }
 
   &:focus {
-    @include box-shadow(0 0 4px rgba(wp-color($red), 0.5));
+    @include box-shadow(0 0 4px rgba(guide-color($red), 0.5));
   }
 }
 
 %btn-aux1,
 .btn-aux1 {
-  background-color: wp-color($purple);
+  background-color: guide-color($purple);
   @include background-image(linear-gradient(
-    wp-color($purple, 'main', 5%),
-    wp-color($purple) 30%,
-    wp-color($purple) 70%,
-    wp-color($purple, 'main', -2.5%)
+    guide-color($purple, 'main', 5%),
+    guide-color($purple) 30%,
+    guide-color($purple) 70%,
+    guide-color($purple, 'main', -2.5%)
   ));
-  border-color: wp-color($purple, 'main', -5%);
+  border-color: guide-color($purple, 'main', -5%);
   color: $white;
-  @include text-shadow(1px 1px 0 wp-color($purple, 'dark'));
+  @include text-shadow(1px 1px 0 guide-color($purple, 'dark'));
 
   &:hover, &:focus {
-    border-color: wp-color($purple, 'main', -5%);
-    background-color: wp-color($purple, 'main', 5%);
+    border-color: guide-color($purple, 'main', -5%);
+    background-color: guide-color($purple, 'main', 5%);
     @include background-image(linear-gradient(
-      wp-color($purple, 'main', 10%),
-      wp-color($purple, 'main', 5%) 30%,
-      wp-color($purple, 'main', 5%) 70%,
-      wp-color($purple)
+      guide-color($purple, 'main', 10%),
+      guide-color($purple, 'main', 5%) 30%,
+      guide-color($purple, 'main', 5%) 70%,
+      guide-color($purple)
     ));
   }
 
   &[disabled], &[disabled]:hover {
-    background-color: mix( wp-color($purple), wp-color($grey, 'bright'));
+    background-color: mix( guide-color($purple), guide-color($grey, 'bright'));
     @include background-image(none);
-    border-color: darken(mix(wp-color($purple), wp-color($grey, 'bright')), 5%);
+    border-color: darken(mix(guide-color($purple), guide-color($grey, 'bright')), 5%);
     color: $white;
   }
 
   &:focus {
-    @include box-shadow(0 0 4px rgba(wp-color($purple), 0.5));
+    @include box-shadow(0 0 4px rgba(guide-color($purple), 0.5));
   }
 }
 
 %btn-aux2,
 .btn-aux2 {
-  background-color: wp-color($orange);
+  background-color: guide-color($orange);
   @include background-image(linear-gradient(
-    wp-color($orange, 'main', 5%),
-    wp-color($orange) 30%,
-    wp-color($orange) 70%,
-    wp-color($orange, 'main', -2.5%)
+    guide-color($orange, 'main', 5%),
+    guide-color($orange) 30%,
+    guide-color($orange) 70%,
+    guide-color($orange, 'main', -2.5%)
   ));
-  border-color: wp-color($orange, 'main', -5%);
+  border-color: guide-color($orange, 'main', -5%);
   color: $white;
-  @include text-shadow(1px 1px 0 wp-color($orange, 'dark'));
+  @include text-shadow(1px 1px 0 guide-color($orange, 'dark'));
 
   &:hover, &:focus {
-    border-color: wp-color($orange, 'main', -5%);
-    background-color: wp-color($orange, 'main', 5%);
+    border-color: guide-color($orange, 'main', -5%);
+    background-color: guide-color($orange, 'main', 5%);
     @include background-image(linear-gradient(
-      wp-color($orange, 'main', 10%),
-      wp-color($orange, 'main', 5%) 30%,
-      wp-color($orange, 'main', 5%) 70%,
-      wp-color($orange)
+      guide-color($orange, 'main', 10%),
+      guide-color($orange, 'main', 5%) 30%,
+      guide-color($orange, 'main', 5%) 70%,
+      guide-color($orange)
     ));
   }
 
   &[disabled], &[disabled]:hover {
-    background-color: mix( wp-color($orange), wp-color($grey, 'bright'));
+    background-color: mix( guide-color($orange), guide-color($grey, 'bright'));
     @include background-image(none);
-    border-color: darken(mix(wp-color($orange), wp-color($grey, 'bright')), 5%);
+    border-color: darken(mix(guide-color($orange), guide-color($grey, 'bright')), 5%);
     color: $white;
   }
 
   &:focus {
-    @include box-shadow(0 0 4px rgba(wp-color($orange), 0.5));
+    @include box-shadow(0 0 4px rgba(guide-color($orange), 0.5));
   }
 }
 

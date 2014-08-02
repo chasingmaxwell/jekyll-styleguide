@@ -79,8 +79,8 @@ module.exports = function (grunt) {
             highlight: '#fefefe',
           },
           customselectors: {
-            "abuse": [".flag-wp-flag-comments-abuse .flag-action"],
-            "abuse-red": [".icon-abuse:hover", ".flag-wp-flag-comments-abuse a:hover"],
+            "abuse": [".flag-guide-flag-comments-abuse .flag-action"],
+            "abuse-red": [".icon-abuse:hover", ".flag-guide-flag-comments-abuse a:hover"],
             "abuse-red_dark": [".icon-abuse.unflag-action"],
             "cc-blue": [".icon-cc:hover"],
             "close": [".chosen-container-multi", ".search-choice-close"],

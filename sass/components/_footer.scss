@@ -4,24 +4,24 @@
  */
 
 #footer {
-  border-top: 2px solid wp-color($grey, main, 2.5%);
+  border-top: 2px solid guide-color($grey, main, 2.5%);
 
   .row-1 {
     font-size: 0.875em;
-    color: wp-color($grey, highlight);
+    color: guide-color($grey, highlight);
     background: {
-      color: wp-color($grey, dark, 5%);
+      color: guide-color($grey, dark, 5%);
       image: image-url('textures/noise.png');
     }
 
     overflow: hidden; // Contain any margins of child elements
-    border-bottom: 1px solid wp-color($red, dark, 5%);
+    border-bottom: 1px solid guide-color($red, dark, 5%);
   }
 
   .row-2 {
     font-size: 0.75em;
-    color: wp-color($grey, highlight, -10%);
-    border-top: 1px solid wp-color($grey, dark, -10%);
+    color: guide-color($grey, highlight, -10%);
+    border-top: 1px solid guide-color($grey, dark, -10%);
   }
 }
 

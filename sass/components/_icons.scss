@@ -1,7 +1,7 @@
 /**
  * Icons
  */
-%worldpulse-icon {
+%guide-icon {
   position: relative;
 
   display: inline-block; // @TODO: IE6/7??
@@ -58,7 +58,7 @@
     @include border-radius(2px);
     padding: 0.5em 0.25em;
 
-    background-color: wp-color($grey, 'highlight', 5%);
+    background-color: guide-color($grey, 'highlight', 5%);
   }
 
   &.show-tooltip:focus:after,
@@ -68,13 +68,13 @@
 }
 
 span.show-tooltip:after {
-  color: wp-color($purple, 'bright');
-  border-color: wp-color($purple, 'bright');
+  color: guide-color($purple, 'bright');
+  border-color: guide-color($purple, 'bright');
 }
 
 a.show-tooltip:after {
-  color: wp-color($blue, 'main', -5%);
-  border-color: wp-color($blue, 'dark', -5%);
+  color: guide-color($blue, 'main', -5%);
+  border-color: guide-color($blue, 'dark', -5%);
 }
 
 $icons: // All icons
@@ -102,12 +102,12 @@ $icons: // All icons
 
 // If you're creating an icon with a hover or active state, be sure to configure
 // that in the Gruntfile.js. This array now exists only to properly extend
-// %worldpulse-icon above; Grunticons handles all image creation and alternate
+// %guide-icon above; Grunticons handles all image creation and alternate
 // class names if .icon-X isn't possible.
 
 @each $icon in $icons {
   #{('.icon-' + $icon)} {
-    @extend %worldpulse-icon;
+    @extend %guide-icon;
   }
 }
 
@@ -116,15 +116,15 @@ $icons: // All icons
  */
 
 // The red ones:
-#{nest('.flag-wp-flag-comments-abuse', '.flag-action:after, .unflag-action:after')},
+#{nest('.flag-guide-flag-comments-abuse', '.flag-action:after, .unflag-action:after')},
 .icon-abuse.show-tooltip:after,
 .icon-redact.show-tooltip:after {
-  color: wp-color($red, 'bright');
-  border-color: wp-color($red, 'main', 5%);
+  color: guide-color($red, 'bright');
+  border-color: guide-color($red, 'main', 5%);
 }
 
 // Extra items that need the icon classes added to them.
-.flag-wp-flag-comments-abuse .flag-action,
-.flag-wp-flag-comments-abuse .unflag-action {
-  @extend %worldpulse-icon;
+.flag-guide-flag-comments-abuse .flag-action,
+.flag-guide-flag-comments-abuse .unflag-action {
+  @extend %guide-icon;
 }

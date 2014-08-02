@@ -6,9 +6,9 @@
 h2.comment-form {
   margin-bottom: 0;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid wp-color($grey, highlight, 5%);
+  border-bottom: 1px solid guide-color($grey, highlight, 5%);
 }
-form.comment-form { border-top: 1px solid wp-color($grey, highlight, -2.5%); }
+form.comment-form { border-top: 1px solid guide-color($grey, highlight, -2.5%); }
 
 .comment-form {
   padding-top: 0.75em;
@@ -18,7 +18,7 @@ form.comment-form { border-top: 1px solid wp-color($grey, highlight, -2.5%); }
     font-family: $gotham;
     font-weight: 600;
     line-height: 1.125;
-    color: wp-color($purple, main);
+    color: guide-color($purple, main);
     font-size: 1.125em;
   }
 

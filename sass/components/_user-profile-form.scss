@@ -42,7 +42,7 @@
     }
 
     .description {
-      color: wp-color($grey, main, 20%);
+      color: guide-color($grey, main, 20%);
     }
 
     @include respond-to('wide form labels') {

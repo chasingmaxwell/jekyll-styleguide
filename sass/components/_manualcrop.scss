@@ -18,7 +18,7 @@
   @include opacity(0.95);
 
   background: {
-    color: wp-color($grey, dark, -5%);
+    color: guide-color($grey, dark, -5%);
     image: inline-image('textures/stripes-dark.png'); // This is stupidly small, so we get a benefit from inlining the image.
     repeat: repeat;
   }

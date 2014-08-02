@@ -109,8 +109,8 @@ $green: (
 );
 
 
-$white          : wp-color($grey, 'highlight', 5%);
-$black          : wp-color($grey, 'dark', -5%);
+$white          : guide-color($grey, 'highlight', 5%);
+$black          : guide-color($grey, 'dark', -5%);
 
 
 
@@ -134,9 +134,9 @@ $social-colors:(
 
 
 // Base color variables.
-$link           : wp-color($blue);
-$visited        : wp-color($purple, 'bright');
-$selection-bg   : wp-color($purple, 'bright');
+$link           : guide-color($blue);
+$visited        : guide-color($purple, 'bright');
+$selection-bg   : guide-color($purple, 'bright');
 $selection      : $white;
 
 // The amount lists, blockquotes and comments are indented.

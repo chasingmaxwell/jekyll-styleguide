@@ -2,7 +2,7 @@
  * Tables (ya know, just in case)
  */
 table {
-  border: 1px solid wp-color($grey, 'bright');
+  border: 1px solid guide-color($grey, 'bright');
   border-bottom-width: 2px;
   @include border-radius(3px);
   border-collapse: separate; // To make the outer border apply the radius
@@ -10,15 +10,15 @@ table {
   width: 100%;
 
   thead {
-    color: wp-color($grey, main, 2.5%);
-    @include text-shadow(1px 1px 0 rgba( wp-color($grey, highlight, 5%), 0.75));
+    color: guide-color($grey, main, 2.5%);
+    @include text-shadow(1px 1px 0 rgba( guide-color($grey, highlight, 5%), 0.75));
 
     td, th {
       // This can't be applied to thead or tr directly, for whatever reason,
       // because of the border-collapse:separate rule. Applying to the cell
       // directly is okay, though, because that's where the other borders are.
-      border-bottom: 1px solid wp-color($grey, 'bright', -7.5%);
-      background-color: wp-color($grey, 'bright', 2.5%);
+      border-bottom: 1px solid guide-color($grey, 'bright', -7.5%);
+      background-color: guide-color($grey, 'bright', 2.5%);
     }
 
     label {
@@ -37,14 +37,14 @@ table {
   }
 
   tr:nth-child(2n+1) {
-    background-color: wp-color($grey, 'highlight', 5%);
+    background-color: guide-color($grey, 'highlight', 5%);
   }
 
   tr:nth-child(2n+0) {
-    background-color: wp-color($grey, 'highlight');
+    background-color: guide-color($grey, 'highlight');
   }
 
   th + th, td + td {
-    border-left: 1px solid wp-color($grey, 'bright', 5%);
+    border-left: 1px solid guide-color($grey, 'bright', 5%);
   }
 }

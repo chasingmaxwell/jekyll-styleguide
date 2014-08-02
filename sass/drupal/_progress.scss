@@ -17,7 +17,7 @@
 
   .bar {
     right: 0;
-    background-color: wp-color($grey, bright);
+    background-color: guide-color($grey, bright);
   }
 
   .filled {
@@ -30,7 +30,7 @@
             animation: progressBackground 0.85s linear infinite;
 
     background: {
-      color: wp-color($green);
+      color: guide-color($green);
       image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQklEQVQYV2NkwA0kkaUYcahDUQRU8xybQgxFIMPQFWJVhK4QpyJkhXgVwRQSVIRN4XNcoQDyDMxEnIqQTcSrCKQQAKZDCW8B5soxAAAAAElFTkSuQmCC);
       repeat: repeat;
       position: 0px 0px;
@@ -44,7 +44,7 @@
     right: 0;
     text-align: center;
 
-    color: wp-color($grey, highlight, 5%);
+    color: guide-color($grey, highlight, 5%);
     font-family: $gotham;
     text-transform: uppercase;
     font-size: 0.875em;
