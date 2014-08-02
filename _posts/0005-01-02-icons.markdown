@@ -68,7 +68,7 @@ to be read inline by screen readers, search engines, text browsers, etc.
 
 <h3 class="icons-inventory">Full Inventory:</h3>
 
-| CSS Class       | Example                                                | Meaning on _World Pulse_ | Original Iconmonstr Entry                                |
+| CSS Class       | Example                                                | Meaning on _Brand Name Here_ | Original Iconmonstr Entry                                |
 | --------------- |:------------------------------------------------------:| ------------------------ | -------------------------------------------------------- |
 | `.icon-abuse`   | <a class="icon-abuse">This is Abuse or Spam</a>        | _Spam / Abuse_           | [Stop 3](http://iconmonstr.com/stop-3-icon/)             |
 | `.icon-cc`      | <a class="icon-cc">Creative Commons</a>                | _Creative Commons_       | [Copyright 4](http://iconmonstr.com/copyright-4-icon/)   |
