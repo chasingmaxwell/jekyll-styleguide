@@ -1,4 +1,4 @@
-name: World Pulse Style Guide
+name: Style Guide Template
 markdown: redcarpet
 redcarpet:
   extensions: ["tables"]

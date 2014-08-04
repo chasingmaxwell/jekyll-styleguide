@@ -1,4 +1,4 @@
-World Pulse Website Icons
+Icons
 =========================
 
 Source: http://iconmonstr.com/
